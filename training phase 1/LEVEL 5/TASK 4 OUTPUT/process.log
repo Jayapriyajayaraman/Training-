@@ -1,0 +1,4 @@
+025-03-28 14:40:48,615 - INFO - Started processing data1.csv
+2025-03-28 14:40:48,618 - INFO - Started processing data2.csv
+2025-03-28 14:40:48,618 - INFO - Finished processing data1.csv, Mean: 49.5
+2025-03-28 14:40:48,628 - INFO - Finished processing data2.csv, Mean: 74.5
