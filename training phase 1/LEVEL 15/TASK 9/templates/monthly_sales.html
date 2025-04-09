@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Monthly Cumulative Sales</title>
+</head>
+<body>
+    <h1>Monthly Cumulative Sales</h1>
+    <table border="1">
+        <tr><th>Month</th><th>Total Sales</th></tr>
+        {% for row in sales %}
+        <tr>
+            <td>{{ row['month'] }}</td>
+            <td>{{ "%.2f"|format(row['total_sales']) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/top_customers">Go to Top 5 Customers per Category</a>
+</body>
+</html>
