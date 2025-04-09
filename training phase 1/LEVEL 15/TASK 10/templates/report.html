@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Customer Report</title>
+</head>
+<body>
+    <h2>Customer Report (Updated Dynamically)</h2>
+    <table border="1">
+        <tr>
+            <th>Customer ID</th>
+            <th>Category</th>
+            <th>Total Sales</th>
+        </tr>
+        {% for row in data %}
+        <tr>
+            <td>{{ row[0] }}</td>
+            <td>{{ row[1] }}</td>
+            <td>{{ "%.2f"|format(row[2]) }}</td>
+        </tr>
+        {% endfor %}
+    </table>
+    <br>
+    <a href="/input">← Back to Input</a>
+</body>
+</html>
